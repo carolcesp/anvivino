@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AnviVino - El Arte de Regalar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#9d3b62",
+                    "surface-container-high": "#eae7e7",
+                    "inverse-surface": "#313030",
+                    "tertiary-container": "#434340",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#e5e2de",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary": "#735c00",
+                    "outline": "#877277",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f6f3f2",
+                    "outline-variant": "#dac0c6",
+                    "secondary-container": "#fed65b",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface": "#fcf9f8",
+                    "on-background": "#1c1b1b",
+                    "surface-container": "#f0eded",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "on-tertiary-fixed": "#1c1c1a",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#7f234a",
+                    "on-surface-variant": "#544247",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "on-tertiary-container": "#b1afac",
+                    "primary-container": "#7a1f46",
+                    "error": "#ba1a1a",
+                    "tertiary": "#2d2d2a",
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-bright": "#fcf9f8",
+                    "background": "#fcf9f8",
+                    "primary-fixed": "#ffd9e2",
+                    "on-primary-fixed": "#3e001e",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-primary": "#ffb0c8",
+                    "primary-fixed-dim": "#ffb0c8",
+                    "on-primary-container": "#ff8bb3",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#5c0430"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "stack-md": "16px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "section-gap": "80px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter", "sans-serif"],
+                    "headline-md": ["Manrope", "sans-serif"],
+                    "label-sm": ["Inter", "sans-serif"],
+                    "body-md": ["Inter", "sans-serif"],
+                    "display-lg-mobile": ["Manrope", "sans-serif"],
+                    "display-lg": ["Manrope", "sans-serif"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(252, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(218, 192, 198, 0.3);
+        }
+
+        /* Subtle atmospheric elevation */
+        .elevation-1 {
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.04);
+        }
+        .elevation-2 {
+            box-shadow: 0px 12px 32px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md pt-20 pb-24 md:pb-0">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300" id="topNav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform">
+                AnviVino
+            </div>
+<!-- Desktop Navigation Links (Hidden on Mobile) -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed font-semibold hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Discover</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Vault</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Community</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex gap-4">
+<button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="relative w-full h-[716px] min-h-[500px] flex items-center justify-center overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A sophisticated, high-resolution lifestyle photograph showing elegantly wrapped wine gift boxes in a softly lit, modern interior space. The lighting is warm and inviting, highlighting premium textures like velvet ribbons and matte black cardboard. The aesthetic is luxurious and minimalist, perfect for a high-end viticulture editorial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpUBMR0FLwIFcyd25TpEYXC0xLXYwgJX2FA9OnSW0epEnbYFDbjJAG6M9aO38ptuna7V2PjWDn_BvNtug0xnKMbO-jM0bieqQDlk_I-b2k8dD1wbEjGGkKSgUGVAg6KOwPEX3mGdcDn-hFFiT3OwsvuDzig9jsYH8eMCCkdRuee1Nmwo2VB4bzYmLTPQxXsbh8VyJ6zS6GE4QXWAEFKbhbgRAB44S_6lTRTbWnrpKaFEcRSUVLFsaBYg')"></div>
+<!-- Gradient Overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-margin-mobile flex flex-col items-center gap-stack-lg max-w-2xl mx-auto mt-20">
+<span class="font-label-sm text-label-sm uppercase text-primary tracking-[0.2em]">Colecciones Exclusivas</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">El Arte de Regalar Momentos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Descubre nuestra selección de packs diseñados para impresionar. Cada caja es una experiencia sensorial cuidadosamente curada para celebrar las ocasiones más especiales.
+                </p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 elevation-1 hover:elevation-2 active:scale-95">
+                    Explorar Colección
+                </button>
+</div>
+</section>
+<!-- Packs Grid Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Packs Destacados</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Selecciones completas para regalar.</p>
+</div>
+<!-- Filters -->
+<div class="hidden md:flex gap-2">
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm">Todos</button>
+<button class="px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-sm font-label-sm">Aniversario</button>
+<button class="px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-sm font-label-sm">Corporativo</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1 -->
+<article class="group bg-surface-container-lowest rounded-DEFAULT overflow-hidden elevation-1 hover:elevation-2 transition-all duration-500 border border-outline-variant/30">
+<div class="relative h-[400px] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A beautifully arranged premium wine gift pack on a clean, light marble surface. The pack includes a bottle of aged red wine, two artisan crystal glasses, a box of dark truffles, and an elegant tote bag. The composition is editorial, well-lit from above, capturing the rich burgundy colors of the wine and the sleek black packaging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHV3GcxF5jka1Yrgar_nTzXC0iwTxdERo9J2-zu8qL2hfLKpiPcZ1pbfuBdzWXF5dWK4fbLD7DEelHEz2KOk_cEjXdjRehzml6sn3UPP44DIFb0iMNEd6l5geUghmREi0ozWkvn6FGAkXmEAUAfybJ2rEMY2iS1Ls91xU1awKVgQWKPA3iRJ3I6D_jfdEgzLJKcbONmMMbGZ9xFM7OKPk994HbZ3iKv0oxzFk3VI2vBsNxuTqR5VVH2Q"/>
+<!-- Occasion Badge -->
+<div class="absolute top-6 left-6 bg-surface/90 backdrop-blur-md px-4 py-1.5 rounded-full">
+<span class="font-label-sm text-label-sm text-primary uppercase">Aniversario</span>
+</div>
+<!-- Favorite Button -->
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-surface/50 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Pack 'Noche Eterna'</h3>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ref: AV-2024-NE</p>
+</div>
+<span class="font-headline-md text-headline-md text-primary">€125</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+                            La experiencia definitiva. Incluye un Reserva 2018, dos copas Riedel de cristal tallado, selección de trufas de chocolate negro y presentación en bolsa de lino premium.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-on-primary py-3 px-6 rounded-full font-body-md font-semibold hover:bg-primary-container transition-colors active:scale-95 text-center">
+                                Personalizar Pack
+                            </button>
+<button class="flex-1 border border-outline-variant text-on-surface py-3 px-6 rounded-full font-body-md font-semibold hover:bg-surface-container-low transition-colors active:scale-95 text-center">
+                                Ver detalles
+                            </button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group bg-surface-container-lowest rounded-DEFAULT overflow-hidden elevation-1 hover:elevation-2 transition-all duration-500 border border-outline-variant/30">
+<div class="relative h-[400px] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A minimalist and chic wine gift set focused on white wine. Features a crisp bottle of Sauvignon Blanc, an artisan cheese board, and delicate stemware. Photographed in a bright, airy setting with soft morning light creating gentle shadows, emphasizing the fresh, celebratory mood of a birthday gift." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKNR_mOX38D4ECi3tiiiB8AqC-V6ViO-AfEMecnRNcewNLk7dM36_uDq_67IyDzybHwYzTMPwD5kZoN1z-iqkASd9aeKs5DccL57E4kRY2TXjD4At7lac0TWbmiHy9rDNeejO-CV6GxxrH4VXDKLbiLkCJ_fkZaBsMFAJ5v9oZE-SIyJvUNV1tsIbFexMv347Qg2P_haaJVItuVTY3CY_ctts_R_fisUhxi9RggC5wXN8nJi3q1qHRPQ"/>
+<!-- Occasion Badge -->
+<div class="absolute top-6 left-6 bg-surface/90 backdrop-blur-md px-4 py-1.5 rounded-full">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Cumpleaños</span>
+</div>
+<!-- Favorite Button -->
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-surface/50 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Pack 'Luz de Alba'</h3>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ref: AV-2024-LA</p>
+</div>
+<span class="font-headline-md text-headline-md text-primary">€89</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+                            Fresco y vibrante. Albariño selección especial acompañado de un set de maridaje de quesos artesanales, presentado en estuche de madera reciclada.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-on-primary py-3 px-6 rounded-full font-body-md font-semibold hover:bg-primary-container transition-colors active:scale-95 text-center">
+                                Personalizar Pack
+                            </button>
+<button class="flex-1 border border-outline-variant text-on-surface py-3 px-6 rounded-full font-body-md font-semibold hover:bg-surface-container-low transition-colors active:scale-95 text-center">
+                                Ver detalles
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-6 md:hidden bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-t border-outline-variant/20 shadow-[0_-4px_20px_rgba(0,0,0,0.04)] rounded-t-lg z-50">
+<!-- Discover (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined filled mb-1" data-icon="explore">explore</span>
+<span class="font-label-sm text-label-sm">Discover</span>
+</a>
+<!-- Vault -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-tertiary-container/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="wine_bar">wine_bar</span>
+<span class="font-label-sm text-label-sm">Vault</span>
+</a>
+<!-- Community -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-tertiary-container/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="group">group</span>
+<span class="font-label-sm text-label-sm">Community</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-tertiary-container/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Minimal interaction logic for heart buttons
+        document.querySelectorAll('button:has([data-icon="favorite"])').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const icon = this.querySelector('.material-symbols-outlined');
+                if (icon.classList.contains('filled')) {
+                    icon.classList.remove('filled', 'text-error');
+                    this.classList.remove('text-error');
+                    this.classList.add('text-on-surface-variant');
+                } else {
+                    icon.classList.add('filled', 'text-error');
+                    this.classList.remove('text-on-surface-variant');
+                    this.classList.add('text-error');
+                    
+                    // Simple pop animation
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                }
+            });
+        });
+
+        // Hide/Show TopNav on scroll down/up
+        let lastScrollTop = 0;
+        const nav = document.getElementById('topNav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scroll down
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                nav.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body></html>
