@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/pack/pack-customize.component').then(m => m.PackCustomizeComponent)
   },
   {
+    path: 'personalizar',
+    loadComponent: () => import('./pages/pack/pack-customize.component').then(m => m.PackCustomizeComponent)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

@@ -46,30 +46,30 @@ import { PackCardComponent, Pack } from '../pack-card/pack-card.component';
 export class PacksGridComponent {
   filters = signal(['Todos', 'Aniversario', 'Cumpleaños', 'Corporativo']);
   activeFilter = signal('Todos');
-  
+
   packs = signal<Pack[]>([
     {
       id: '1',
-      name: "Pack 'Noche Eterna'",
+      name: "Pack Aniversario",
       reference: 'AV-2024-NE',
-      price: 125,
-      description: 'La experiencia definitiva. Incluye un Reserva 2018, dos copas Riedel de cristal tallado, selección de trufas de chocolate negro y presentación en bolsa de lino premium.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHV3GcxF5jka1Yrgar_nTzXC0iwTxdERo9J2-zu8qL2hfLKpiPcZ1pbfuBdzWXF5dWK4fbLD7DEelHEz2KOk_cEjXdjRehzml6sn3UPP44DIFb0iMNEd6l5geUghmREi0ozWkvn6FGAkXmEAUAfybJ2rEMY2iS1Ls91xU1awKVgQWKPA3iRJ3I6D_jfdEgzLJKcbONmMMbGZ9xFM7OKPk994HbZ3iKv0oxzFk3VI2vBsNxuTqR5VVH2Q',
-      imageAlt: 'Premium wine gift pack on marble surface',
+      price: 40,
+      description: 'La experiencia definitiva. Incluye una botella de vino, dos copas personalizadas, selección de chocolates y presentación en bolsa transparente.',
+      imageUrl: '/assets/images/pack-aniversario.png',
+      imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
       occasion: 'Aniversario',
       occasionColorClass: 'text-primary'
     },
     {
       id: '2',
-      name: "Pack 'Luz de Alba'",
+      name: "Pack Cumpleaños",
       reference: 'AV-2024-LA',
       price: 89,
       description: 'Fresco y vibrante. Albariño selección especial acompañado de un set de maridaje de quesos artesanales, presentado en estuche de madera reciclada.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDKNR_mOX38D4ECi3tiiiB8AqC-V6ViO-AfEMecnRNcewNLk7dM36_uDq_67IyDzybHwYzTMPwD5kZoN1z-iqkASd9aeKs5DccL57E4kRY2TXjD4At7lac0TWbmiHy9rDNeejO-CV6GxxrH4VXDKLbiLkCJ_fkZaBsMFAJ5v9oZE-SIyJvUNV1tsIbFexMv347Qg2P_haaJVItuVTY3CY_ctts_R_fisUhxi9RggC5wXN8nJi3q1qHRPQ',
-      imageAlt: 'Minimalist white wine gift set',
+      imageUrl: '',
+      imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
       occasion: 'Cumpleaños',
       occasionColorClass: 'text-secondary'
-    }
+    },
   ]);
 
   filteredPacks = computed(() => {

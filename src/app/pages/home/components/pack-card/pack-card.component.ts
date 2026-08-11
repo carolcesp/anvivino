@@ -59,7 +59,7 @@ export interface Pack {
           <span class="font-headline-md text-headline-md text-primary">€{{ pack().price }}</span>
         </div>
         
-        <p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
           {{ pack().description }}
         </p>
 
@@ -69,9 +69,6 @@ export interface Pack {
             class="flex-1 bg-primary text-on-primary py-3 px-6 rounded-full font-body-md font-semibold hover:bg-primary-container transition-colors active:scale-95 text-center no-underline">
             Personalizar Pack
           </a>
-          <button class="flex-1 border border-outline-variant text-on-surface py-3 px-6 rounded-full font-body-md font-semibold hover:bg-surface-container-low transition-colors active:scale-95 text-center">
-            Ver detalles
-          </button>
         </div>
       </div>
     </article>
@@ -80,7 +77,7 @@ export interface Pack {
 export class PackCardComponent {
   pack = input.required<Pack>();
   favoriteToggled = output<string>();
-  
+
   isFavorite = signal(false);
   isAnimating = signal(false);
 
@@ -89,7 +86,7 @@ export class PackCardComponent {
   toggleFavorite() {
     this.isFavorite.update(v => !v);
     this.favoriteToggled.emit(this.pack().id);
-    
+
     // Trigger animation
     this.isAnimating.set(true);
     setTimeout(() => {
