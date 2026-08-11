@@ -14,8 +14,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         <!-- Brand -->
         <a 
           routerLink="/" 
-          class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 no-underline">
-          AnviVino
+          class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95 no-underline flex items-center">
+          <img 
+            src="assets/images/logo-anvivino.jpg" 
+            alt="AnviVino - El Arte de Regalar" 
+            class="h-12 w-auto object-contain">
+            AnviVino
         </a>
 
         <!-- Desktop Navigation Links (Hidden on Mobile) -->
@@ -36,14 +40,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         </div>
 
         <!-- Trailing Icons -->
-        <div class="flex gap-4">
-          <button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95">
-            <span class="material-symbols-outlined">search</span>
-          </button>
-          <button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95">
-            <span class="material-symbols-outlined">account_circle</span>
-          </button>
-        </div>
+        <!-- <div class="flex gap-4">
+        //   <button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95">
+        //     <span class="material-symbols-outlined">search</span>
+        //   </button>
+        //   <button class="text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300 cursor-pointer active:scale-95">
+        //     <span class="material-symbols-outlined">account_circle</span>
+        //   </button>
+        // </div>
+        -->
       </div>
     </nav>
   `
