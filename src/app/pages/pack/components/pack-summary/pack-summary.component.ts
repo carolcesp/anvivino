@@ -93,9 +93,9 @@ export class PackSummaryComponent {
 
   whatsAppUrl = computed(() => {
     const s = this.selection();
-    
+
     const formatCategory = (items: any[]) => {
-      return items.length > 0 
+      return items.length > 0
         ? items.map(item => `${item.name}${item.description ? ` (${item.description})` : ''}`).join(', ')
         : 'Por definir';
     };
@@ -112,6 +112,6 @@ export class PackSummaryComponent {
       '¿Podrían indicarme disponibilidad, precio final y opciones de envío? ¡Gracias!'
     ];
     const message = encodeURIComponent(lines.join('\n'));
-    return `https://wa.me/34600000000?text=${message}`;
+    return `https://api.whatsapp.com/send?phone=34631646413&text=${message}`;
   });
 }

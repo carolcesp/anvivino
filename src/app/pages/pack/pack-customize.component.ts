@@ -75,10 +75,10 @@ import { PACK_STEPS_CONFIG } from './config/pack-customization.config';
             </button>
 
             <button 
-              (click)="nextStep()"
-              [disabled]="currentStepId() === steps.length"
+              (click)="handleNextOrFinish()"
+              [disabled]="currentStepId() === steps.length && !hasAnySelection()"
               class="px-8 py-4 bg-primary text-on-primary rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer">
-              Continuar
+              {{ currentStepId() === steps.length ? 'Finalizar por WhatsApp' : 'Continuar' }}
             </button>
           </div>
         </div>
@@ -110,6 +110,35 @@ export class PackCustomizeComponent implements OnInit {
     return this.steps.find(s => s.id === this.currentStepId()) || this.steps[0];
   });
 
+  hasAnySelection = computed(() => {
+    const s = this.selection();
+    return Object.values(s).some(arr => arr.length > 0);
+  });
+
+  whatsAppUrl = computed(() => {
+    const s = this.selection();
+
+    const formatCategory = (items: any[]) => {
+      return items.length > 0
+        ? items.map(item => `${item.name}${item.description ? ` (${item.description})` : ''}`).join(', ')
+        : 'Por definir';
+    };
+
+    const lines: string[] = [
+      '🍷 ¡Hola! Me gustaría encargar un pack personalizado AnviVino:',
+      '',
+      `📦 *Bolsas:* ${formatCategory(s.bolsa)}`,
+      `🍾 *Vinos:* ${formatCategory(s.vino)}`,
+      `🍫 *Chocolates:* ${formatCategory(s.chocolates)}`,
+      `🥂 *Copas:* ${formatCategory(s.copas)}`,
+      `✨ *Extras:* ${formatCategory(s.extras)}`,
+      '',
+      '¿Podrían indicarme disponibilidad, precio final y opciones de envío? ¡Gracias!'
+    ];
+    const message = encodeURIComponent(lines.join('\n'));
+    return `https://api.whatsapp.com/send?phone=34631646413&text=${message}`;
+  });
+
   ngOnInit() {
     this.title.setTitle('AnviVino - Personaliza tu Pack');
     this.meta.updateTag({ name: 'description', content: 'Crea un pack de vino personalizado para tu ocasión especial.' });
@@ -122,6 +151,16 @@ export class PackCustomizeComponent implements OnInit {
   nextStep() {
     if (this.currentStepId() < this.steps.length) {
       this.currentStepId.update(v => v + 1);
+    }
+  }
+
+  handleNextOrFinish() {
+    if (this.currentStepId() === this.steps.length) {
+      if (this.hasAnySelection()) {
+        window.open(this.whatsAppUrl(), '_blank');
+      }
+    } else {
+      this.nextStep();
     }
   }
 

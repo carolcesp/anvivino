@@ -7,11 +7,11 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [NgOptimizedImage, RouterLink],
   template: `
-    <section class="relative w-full h-[716px] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <section class="relative w-full h-[716px] min-h-[500px] flex items-start justify-center overflow-hidden pt-28">
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
         <img 
-          ngSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuCpUBMR0FLwIFcyd25TpEYXC0xLXYwgJX2FA9OnSW0epEnbYFDbjJAG6M9aO38ptuna7V2PjWDn_BvNtug0xnKMbO-jM0bieqQDlk_I-b2k8dD1wbEjGGkKSgUGVAg6KOwPEX3mGdcDn-hFFiT3OwsvuDzig9jsYH8eMCCkdRuee1Nmwo2VB4bzYmLTPQxXsbh8VyJ6zS6GE4QXWAEFKbhbgRAB44S_6lTRTbWnrpKaFEcRSUVLFsaBYg" 
+          ngSrc="/assets/images/portada.png" 
           fill
           priority
           class="object-cover object-center"
@@ -22,24 +22,26 @@ import { RouterLink } from '@angular/router';
       </div>
 
       <!-- Hero Content -->
-      <div class="relative z-10 text-center px-margin-mobile flex flex-col items-center gap-stack-lg max-w-2xl mx-auto mt-20">
-        <span class="font-label-sm text-label-sm uppercase text-primary tracking-[0.2em]">Colecciones Exclusivas</span>
-        
-        <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
-          El Arte de Regalar Momentos
-        </h1>
-        
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-          Descubre nuestra selección de packs diseñados para impresionar. Cada caja es una experiencia sensorial cuidadosamente curada para celebrar las ocasiones más especiales.
-        </p>
-        
-        <a 
-          routerLink="/pack"
-          class="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 elevation-1 hover:elevation-2 active:scale-95 no-underline">
-          Explorar y Personalizar Pack
-        </a>
+      <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-md flex flex-col items-start text-left gap-stack-lg">
+          <span class="font-label-sm text-label-sm uppercase text-primary tracking-[0.2em]">Colecciones Exclusivas</span>
+          
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+            El Arte de Regalar<br>Momentos
+          </h1>
+          
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Descubre nuestra selección de packs diseñados para impresionar. Cada caja es una experiencia sensorial cuidadosamente curada para celebrar las ocasiones más especiales.
+          </p>
+          
+          <a 
+            routerLink="/pack"
+            class="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 elevation-1 hover:elevation-2 active:scale-95 no-underline">
+            Explorar y Personalizar Pack
+          </a>
+        </div>
       </div>
     </section>
   `
 })
-export class HeroComponent {}
+export class HeroComponent { }
