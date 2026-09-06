@@ -6,7 +6,6 @@ export interface Pack {
   id: string;
   name: string;
   reference: string;
-  price: number;
   description: string;
   imageUrl: string;
   imageAlt: string;
@@ -56,7 +55,6 @@ export interface Pack {
             <h3 class="font-headline-md text-headline-md text-on-surface mb-1">{{ pack().name }}</h3>
             <p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ref: {{ pack().reference }}</p>
           </div>
-          <span class="font-headline-md text-headline-md text-primary">€{{ pack().price }}</span>
         </div>
         
         <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">

@@ -52,9 +52,8 @@ export class PacksGridComponent {
       id: '1',
       name: "Pack Aniversario",
       reference: 'AV-2024-NE',
-      price: 40,
       description: 'La experiencia definitiva. Incluye una botella de vino, dos copas personalizadas, selección de chocolates y presentación en bolsa transparente.',
-      imageUrl: '/assets/images/pack-aniversario.png',
+      imageUrl: '/assets/images/packs/pack-aniversario.png',
       imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
       occasion: 'Aniversario',
       occasionColorClass: 'text-primary'
@@ -63,9 +62,8 @@ export class PacksGridComponent {
       id: '2',
       name: "Pack Cumpleaños",
       reference: 'AV-2024-LA',
-      price: 89,
       description: 'Fresco y vibrante. Albariño selección especial acompañado de un set de maridaje de quesos artesanales, presentado en estuche de madera reciclada.',
-      imageUrl: '',
+      imageUrl: '/assets/images/packs/pack-cumple.JPG',
       imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
       occasion: 'Cumpleaños',
       occasionColorClass: 'text-secondary'

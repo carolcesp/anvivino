@@ -8,15 +8,19 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Selecciona el vino protagonista',
     images: [
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAueSre43iddFzpM3vIxLDBBGODdh08c8QQOqowWqvoEdJmWvrYmzY-Zh24KcKT_KRUgLvWkZ1_PQqOkV1vRtpzIuP8WosOKovHeKE6VHH9OOzdsXY9RP_67OH2MStWa-ARnq2m8ySmRBGPjsT6lNGVAkY8bgmcOlbee7FJsMMMK3HMYEtj0t38ilNSytRWhMWr1m2EVtA6mDN4fc8sIayHICLask8PQTQwW-hpeTzIZ-vnnFXBoAXSyg',
+        url: '/assets/images/vinos/vino-tinto.JPG',
         alt: 'Botella de vino tinto reserva'
       },
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDPxuQ_WV6z9Z0-5fua7YKusVcRQR5VTzmC1JahTSa2Qd7MELYLWjSKUdi8j6Sx98On5cVsC5XNN3nXTdkYkOKW02t4-Cf0SgKqV3n5KSzt9j9kAF4DqHYijW6Gy5mspxXXafz91xtY-zq84pyXffMR474bNWBTXORoR_TmCgGzIhVD7e0kcAGcolk2J4sNwfjdMGH7WzbB3RHq7mT3czMOQ4OgI76XbzU5437Q4nEYU0gnkETEUSqwGA',
+        url: '/assets/images/vinos/vino-blanco.jpg',
         alt: 'Botella de vino blanco fresco'
       },
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDKNR_mOX38D4ECi3tiiiB8AqC-V6ViO-AfEMecnRNcewNLk7dM36_uDq_67IyDzybHwYzTMPwD5kZoN1z-iqkASd9aeKs5DccL57E4kRY2TXjD4At7lac0TWbmiHy9rDNeejO-CV6GxxrH4VXDKLbiLkCJ_fkZaBsMFAJ5v9oZE-SIyJvUNV1tsIbFexMv347Qg2P_haaJVItuVTY3CY_ctts_R_fisUhxi9RggC5wXN8nJi3q1qHRPQ',
+        url: '/assets/images/vinos/vino-rosado.png',
+        alt: 'Botella de vino rosado'
+      },
+      {
+        url: '/assets/images/vinos/vino-azul.JPG',
         alt: 'Botella de vino rosado'
       }
     ],
@@ -35,7 +39,7 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
       },
       {
         id: 'v-3',
-        name: 'Azul',
+        name: 'Azul (Preguntar disponibilidad)',
         category: 'vino',
         description: 'Frutado y refrescante'
       },
@@ -60,11 +64,11 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Añade la copa perfecta',
     images: [
       {
-        url: '/assets/images/copas_todas.jpg',
+        url: '/assets/images/copas/copas_todas.jpg',
         alt: 'Set de 2 copas de plastico'
       },
       {
-        url: '/assets/images/copas_rosa_negra.jpg',
+        url: '/assets/images/copas/copas_rosa_negra.jpg',
         alt: 'Set de 2 copas de plastico'
       }
     ],
@@ -114,11 +118,15 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Elige el estilo de presentación',
     images: [
       {
-        url: '/assets/images/bolsas_colores.jpg',
+        url: '/assets/images/bolsas/bolsas_colores.jpg',
         alt: 'Bolsa de regalo negra mate'
       },
       {
-        url: '/assets/images/bolsas_collage.jpg',
+        url: '/assets/images/bolsas/bolsas_collage.jpg',
+        alt: 'Bolsa de regalo negra mate'
+      },
+      {
+        url: '/assets/images/packs/bolsa-mini-pack.JPG',
         alt: 'Bolsa de regalo negra mate'
       }
     ],
@@ -162,26 +170,25 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Elige los chocolates de maridaje',
     images: [
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHV3GcxF5jka1Yrgar_nTzXC0iwTxdERo9J2-zu8qL2hfLKpiPcZ1pbfuBdzWXF5dWK4fbLD7DEelHEz2KOk_cEjXdjRehzml6sn3UPP44DIFb0iMNEd6l5geUghmREi0ozWkvn6FGAkXmEAUAfybJ2rEMY2iS1Ls91xU1awKVgQWKPA3iRJ3I6D_jfdEgzLJKcbONmMMbGZ9xFM7OKPk994HbZ3iKv0oxzFk3VI2vBsNxuTqR5VVH2Q',
+        url: '/assets/images/extras/chocolates.jpg',
         alt: 'Trufas de chocolate negro'
-      },
-      {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpUBMR0FLwIFcyd25TpEYXC0xLXYwgJX2FA9OnSW0epEnbYFDbjJAG6M9aO38ptuna7V2PjWDn_BvNtug0xnKMbO-jM0bieqQDlk_I-b2k8dD1wbEjGGkKSgUGVAg6KOwPEX3mGdcDn-hFFiT3OwsvuDzig9jsYH8eMCCkdRuee1Nmwo2VB4bzYmLTPQxXsbh8VyJ6zS6GE4QXWAEFKbhbgRAB44S_6lTRTbWnrpKaFEcRSUVLFsaBYg',
-        alt: 'Caja de bombones belgas'
       }
     ],
     options: [
       {
         id: 'c-1',
-        name: 'Ferrero Rocher',
-        category: 'chocolates',
-        description: 'Caja de 8 unidades'
+        name: 'Kitkat',
+        category: 'chocolates'
       },
       {
         id: 'c-2',
-        name: 'Bombones Belgas',
-        category: 'chocolates',
-        description: 'Selección surtida de praliné'
+        name: 'Huesitos',
+        category: 'chocolates'
+      },
+      {
+        id: 'c-3',
+        name: 'Otros',
+        category: 'chocolates'
       }
     ]
   },
@@ -192,18 +199,50 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Detalles especiales finales',
     images: [
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCIlIevL_i5Gp6RX-9fKodfDd17p-fS12pnydEsAmlaFFDk3M01JuBwJ9oZ-RT0CJkkeg9IIv-4LswiT4b3VGxyhQ2jCvo2YC8gY0RHKUk0jk0nbAIXLaT9YBM70_DVyDhNr7_ilkCl9f8lJRfjLiJH-igEG0yBYzjUel41k0gG2Smtd5rJwg6BRQY5otFIXnbLANxfAu_orsf_raezJ6WPG-OWLVb6LHtnOT1NQFTds9VN_3Cb2Zv7Sw',
-        alt: 'Tarjeta dedicatoria personalizada'
+        url: '/assets/images/extras/velas_rojas.jpeg',
+        alt: 'Velas led rojas'
       },
       {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBDIOwKCRG3BJgr-v-wSYrSxvgWhxNI5Ds0n-bVJSMvdTtuLeEon8jKRpuXz5dsry8tDYuNrWZaOK2PmDgN3PCVpFzio2ITgKDfH6yiWmnKnoxv8Jx8XGM-SgvG-0NZ0o1V2UIxJ4Fr2mrP48q0suSu7EleLbeFwThfNHLUVxMKjCKke288oKdvCq5sV3tVA7GxD2KUcMZOdBNJIVeu5Thmq1gt9SDyfCgpwXlAmaJEKDbvWQmoEk7sww',
-        alt: 'Abridor sacacorchos profesional'
+        url: '/assets/images/extras/velas_azul.jpeg',
+        alt: 'Velas led azul y blancas'
+      },
+      {
+        url: '/assets/images/extras/soporte_love.jpeg',
+        alt: 'Soporte para copas romantico'
+      },
+      {
+        url: '/assets/images/extras/soporte_white.jpeg',
+        alt: 'Soporte para copas blanco'
+      },
+      {
+        url: '/assets/images/extras/petalos_azules.JPG',
+        alt: 'Petalos azules'
+      },
+      {
+        url: '/assets/images/extras/petalos_azul_blanco.jpeg',
+        alt: 'Petalos azules'
+      },
+      {
+        url: '/assets/images/extras/petalos_rojos.JPG',
+        alt: 'Petalos rojos'
+      },
+      {
+        url: '/assets/images/extras/gorro_navidad.jpeg',
+        alt: 'Gorro para botella navidad'
+      },
+      {
+        url: '/assets/images/extras/bufanda_navidad.jpeg',
+        alt: 'Bufanda navidad'
+      },
+      {
+        url: '/assets/images/extras/pack_navidad.jpg',
+        alt: 'Pack navidad'
       }
     ],
     options: [
       {
         id: 'e-1',
-        name: 'Soporte copas',
+        name: 'Velas led rojas',
         category: 'extras',
         description: ''
       },
@@ -221,42 +260,54 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
       },
       {
         id: 'e-4',
-        name: 'Petalos azules',
+        name: 'Soporte love rojo',
         category: 'extras',
         description: ''
       },
       {
         id: 'e-5',
-        name: 'Petalos rojos',
+        name: 'Soporte beis (tipo madera)',
         category: 'extras',
         description: ''
       },
       {
         id: 'e-6',
-        name: 'Petalos azul y blanco',
-        category: 'extras',
-        description: ''
-      },
-      {
-        id: 'e-10',
-        name: 'Soporte copas especial navidad',
+        name: 'Petalos azules',
         category: 'extras',
         description: ''
       },
       {
         id: 'e-7',
-        name: 'Forro botella navidad',
+        name: 'Petalos rojos',
         category: 'extras',
         description: ''
       },
       {
         id: 'e-8',
-        name: 'Gorro de botella papá noel',
+        name: 'Petalos azul y blanco',
         category: 'extras',
         description: ''
       },
       {
         id: 'e-9',
+        name: 'Soporte copas especial navidad',
+        category: 'extras',
+        description: ''
+      },
+      {
+        id: 'e-10',
+        name: 'Forro botella navidad',
+        category: 'extras',
+        description: ''
+      },
+      {
+        id: 'e-11',
+        name: 'Gorro de botella papá noel',
+        category: 'extras',
+        description: ''
+      },
+      {
+        id: 'e-12',
         name: 'Bufanda papá noel',
         category: 'extras',
         description: ''
