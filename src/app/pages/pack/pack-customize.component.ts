@@ -142,7 +142,9 @@ export class PackCustomizeComponent implements OnInit {
   ngOnInit() {
     this.title.setTitle('AnviVino - Personaliza tu Pack');
     this.meta.updateTag({ name: 'description', content: 'Crea un pack de vino personalizado para tu ocasión especial.' });
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }
 
   private scrollToTop() {
