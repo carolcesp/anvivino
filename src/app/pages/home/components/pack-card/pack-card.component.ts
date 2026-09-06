@@ -5,7 +5,6 @@ import { RouterLink } from '@angular/router';
 export interface Pack {
   id: string;
   name: string;
-  reference: string;
   description: string;
   imageUrl: string;
   imageAlt: string;
@@ -53,7 +52,6 @@ export interface Pack {
         <div class="flex justify-between items-start mb-4">
           <div>
             <h3 class="font-headline-md text-headline-md text-on-surface mb-1">{{ pack().name }}</h3>
-            <p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ref: {{ pack().reference }}</p>
           </div>
         </div>
         

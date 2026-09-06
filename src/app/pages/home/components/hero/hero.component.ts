@@ -31,7 +31,7 @@ import { RouterLink } from '@angular/router';
           </h1>
           
           <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-            Descubre nuestra selección de packs diseñados para impresionar. Cada caja es una experiencia sensorial cuidadosamente curada para celebrar las ocasiones más especiales.
+            Descubre nuestra selección de packs diseñados para impresionar. Cada bolsa es una experiencia sensorial cuidadosamente seleccionada para celebrar las ocasiones más especiales.
           </p>
           
           <a 
@@ -39,6 +39,29 @@ import { RouterLink } from '@angular/router';
             class="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 elevation-1 hover:elevation-2 active:scale-95 no-underline">
             Explorar y Personalizar Pack
           </a>
+
+          <!-- Instagram/Tiktok Button -->
+        <span class="font-semibold text-primary text-outline">Visitanos en Instagram y TikTok</span>
+        <div class="flex flex-wrap gap-2">
+          <a 
+           href="https://www.instagram.com/anvi.vino?stkn=MXFvcWU4NDV6eWRrbg%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer">
+          <img 
+            src="assets/images/icon-insta-2.jpg" 
+            alt="AnviVino - El Arte de Regalar" 
+            class="h-12 w-auto object-contain">
+        </a>
+         <a 
+           href="https://www.tiktok.com/@anvivino?_r=1&_t=ZN-99VqTGNM4rm"
+            target="_blank"
+            rel="noopener noreferrer">
+          <img 
+            src="assets/images/icon-tiktok.jpg" 
+            alt="AnviVino - El Arte de Regalar" 
+            class="h-12 w-auto object-contain">
+        </a>
+        </div>    
         </div>
       </div>
     </section>

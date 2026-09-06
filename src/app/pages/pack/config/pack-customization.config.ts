@@ -254,60 +254,54 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
       },
       {
         id: 'e-3',
-        name: 'Velas led rojas',
-        category: 'extras',
-        description: ''
-      },
-      {
-        id: 'e-4',
         name: 'Soporte love rojo',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-5',
-        name: 'Soporte beis (tipo madera)',
+        id: 'e-4',
+        name: 'Soporte beige (tipo madera)',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-6',
+        id: 'e-5',
         name: 'Petalos azules',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-7',
+        id: 'e-6',
         name: 'Petalos rojos',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-8',
+        id: 'e-7',
         name: 'Petalos azul y blanco',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-9',
+        id: 'e-8',
         name: 'Soporte copas especial navidad',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-10',
+        id: 'e-9',
         name: 'Forro botella navidad',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-11',
+        id: 'e-10',
         name: 'Gorro de botella papá noel',
         category: 'extras',
         description: ''
       },
       {
-        id: 'e-12',
+        id: 'e-11',
         name: 'Bufanda papá noel',
         category: 'extras',
         description: ''

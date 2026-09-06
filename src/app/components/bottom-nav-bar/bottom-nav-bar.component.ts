@@ -25,13 +25,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         <span class="material-symbols-outlined mb-1">wine_bar</span>
         <span class="font-label-sm text-label-sm">Personalizar</span>
       </a>
-
-      <!-- Profile -->
-      <a class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-tertiary-container/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200 no-underline" href="#">
-        <span class="material-symbols-outlined mb-1">person</span>
-        <span class="font-label-sm text-label-sm">Perfil</span>
-      </a>
     </nav>
   `
 })
-export class BottomNavBarComponent {}
+export class BottomNavBarComponent { }

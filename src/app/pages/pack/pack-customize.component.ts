@@ -19,7 +19,7 @@ import { PACK_STEPS_CONFIG } from './config/pack-customization.config';
             Personaliza tu Pack
           </h1>
           <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            Crea el regalo perfecto paso a paso. Selecciona cada detalle para una experiencia enológica única.
+            Crea el regalo perfecto paso a paso. Selecciona cada detalle para una experiencia única.
           </p>
         </div>
 
@@ -190,11 +190,11 @@ export class PackCustomizeComponent implements OnInit {
     this.selection.update(state => {
       const currentList = state[key];
       const isSelected = currentList.some(o => o.id === option.id);
-      
+
       return {
         ...state,
-        [key]: isSelected 
-          ? currentList.filter(o => o.id !== option.id) 
+        [key]: isSelected
+          ? currentList.filter(o => o.id !== option.id)
           : [...currentList, option]
       };
     });

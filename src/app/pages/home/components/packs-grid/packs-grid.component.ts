@@ -44,14 +44,13 @@ import { PackCardComponent, Pack } from '../pack-card/pack-card.component';
   `
 })
 export class PacksGridComponent {
-  filters = signal(['Todos', 'Aniversario', 'Cumpleaños', 'Corporativo']);
+  filters = signal(['Todos', 'Aniversario', 'Cumpleaños', 'Navidad']);
   activeFilter = signal('Todos');
 
   packs = signal<Pack[]>([
     {
       id: '1',
       name: "Pack Aniversario",
-      reference: 'AV-2024-NE',
       description: 'La experiencia definitiva. Incluye una botella de vino, dos copas personalizadas, selección de chocolates y presentación en bolsa transparente.',
       imageUrl: 'assets/images/packs/pack-aniversario.png',
       imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
@@ -61,12 +60,20 @@ export class PacksGridComponent {
     {
       id: '2',
       name: "Pack Cumpleaños",
-      reference: 'AV-2024-LA',
-      description: 'Fresco y vibrante. Albariño selección especial acompañado de un set de maridaje de quesos artesanales, presentado en estuche de madera reciclada.',
+      description: 'La experiencia definitiva. Incluye una botella de vino, dos copas personalizadas, selección de chocolates y presentación en bolsa transparente.',
       imageUrl: 'assets/images/packs/pack-cumple.JPG',
       imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
       occasion: 'Cumpleaños',
       occasionColorClass: 'text-secondary'
+    },
+    {
+      id: '3',
+      name: "Pack Navidad",
+      description: 'La experiencia definitiva. Incluye una botella de vino, dos copas personalizadas, selección de chocolates y presentación en bolsa transparente.',
+      imageUrl: 'assets/images/packs/pack-navidad.jpeg',
+      imageAlt: 'Bolsa de regalo con dos copas de vino y chocolates',
+      occasion: 'Navidad',
+      occasionColorClass: 'text-tertiary'
     },
   ]);
 
