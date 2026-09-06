@@ -8,19 +8,19 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Selecciona el vino protagonista',
     images: [
       {
-        url: '/assets/images/vinos/vino-tinto.JPG',
+        url: 'assets/images/vinos/vino-tinto.JPG',
         alt: 'Botella de vino tinto reserva'
       },
       {
-        url: '/assets/images/vinos/vino-blanco.jpg',
+        url: 'assets/images/vinos/vino-blanco.jpg',
         alt: 'Botella de vino blanco fresco'
       },
       {
-        url: '/assets/images/vinos/vino-rosado.png',
+        url: 'assets/images/vinos/vino-rosado.png',
         alt: 'Botella de vino rosado'
       },
       {
-        url: '/assets/images/vinos/vino-azul.JPG',
+        url: 'assets/images/vinos/vino-azul.JPG',
         alt: 'Botella de vino rosado'
       }
     ],
@@ -64,11 +64,11 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Añade la copa perfecta',
     images: [
       {
-        url: '/assets/images/copas/copas_todas.jpg',
+        url: 'assets/images/copas/copas_todas.jpg',
         alt: 'Set de 2 copas de plastico'
       },
       {
-        url: '/assets/images/copas/copas_rosa_negra.jpg',
+        url: 'assets/images/copas/copas_rosa_negra.jpg',
         alt: 'Set de 2 copas de plastico'
       }
     ],
@@ -118,15 +118,15 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Elige el estilo de presentación',
     images: [
       {
-        url: '/assets/images/bolsas/bolsas_colores.jpg',
+        url: 'assets/images/bolsas/bolsas_colores.jpg',
         alt: 'Bolsa de regalo negra mate'
       },
       {
-        url: '/assets/images/bolsas/bolsas_collage.jpg',
+        url: 'assets/images/bolsas/bolsas_collage.jpg',
         alt: 'Bolsa de regalo negra mate'
       },
       {
-        url: '/assets/images/packs/bolsa-mini-pack.JPG',
+        url: 'assets/images/packs/bolsa-mini-pack.JPG',
         alt: 'Bolsa de regalo negra mate'
       }
     ],
@@ -170,7 +170,7 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Elige los chocolates de maridaje',
     images: [
       {
-        url: '/assets/images/extras/chocolates.jpg',
+        url: 'assets/images/extras/chocolates.jpg',
         alt: 'Trufas de chocolate negro'
       }
     ],
@@ -199,43 +199,43 @@ export const PACK_STEPS_CONFIG: CustomizationStep[] = [
     title: 'Detalles especiales finales',
     images: [
       {
-        url: '/assets/images/extras/velas_rojas.jpeg',
+        url: 'assets/images/extras/velas_rojas.jpeg',
         alt: 'Velas led rojas'
       },
       {
-        url: '/assets/images/extras/velas_azul.jpeg',
+        url: 'assets/images/extras/velas_azul.jpeg',
         alt: 'Velas led azul y blancas'
       },
       {
-        url: '/assets/images/extras/soporte_love.jpeg',
+        url: 'assets/images/extras/soporte_love.jpeg',
         alt: 'Soporte para copas romantico'
       },
       {
-        url: '/assets/images/extras/soporte_white.jpeg',
+        url: 'assets/images/extras/soporte_white.jpeg',
         alt: 'Soporte para copas blanco'
       },
       {
-        url: '/assets/images/extras/petalos_azules.JPG',
+        url: 'assets/images/extras/petalos_azules.JPG',
         alt: 'Petalos azules'
       },
       {
-        url: '/assets/images/extras/petalos_azul_blanco.jpeg',
+        url: 'assets/images/extras/petalos_azul_blanco.jpeg',
         alt: 'Petalos azules'
       },
       {
-        url: '/assets/images/extras/petalos_rojos.JPG',
+        url: 'assets/images/extras/petalos_rojos.JPG',
         alt: 'Petalos rojos'
       },
       {
-        url: '/assets/images/extras/gorro_navidad.jpeg',
+        url: 'assets/images/extras/gorro_navidad.jpeg',
         alt: 'Gorro para botella navidad'
       },
       {
-        url: '/assets/images/extras/bufanda_navidad.jpeg',
+        url: 'assets/images/extras/bufanda_navidad.jpeg',
         alt: 'Bufanda navidad'
       },
       {
-        url: '/assets/images/extras/pack_navidad.jpg',
+        url: 'assets/images/extras/pack_navidad.jpg',
         alt: 'Pack navidad'
       }
     ],

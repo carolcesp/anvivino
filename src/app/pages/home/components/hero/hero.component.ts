@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
         <img 
-          ngSrc="/assets/images/portada.png" 
+          ngSrc="assets/images/portada.png" 
           fill
           priority
           class="object-cover object-center"
