@@ -62,22 +62,33 @@ For more information on using the Angular CLI, including detailed command refere
 ## Build desde cero
 
 # 1. Compilar
-npm run build -- --base-href /anvivino/
+npm run build -- --base-href /
 
-# 2. Desplegar limpio
-# 1. Compilar
-npm run build -- --base-href /anvivino/
-
-# 2. Desplegar limpio
-# 1. Compilar
-npm run build -- --base-href /anvivino/
-# 2. Desplegar limpio
+# 2. Preparar despliegue
 TMPDIR="/Users/carolcespedes/Documents/anvivino_deploy_tmp"
-rm -rf "$TMPDIR" && mkdir "$TMPDIR"
-cp -r dist/anvivino/browser/. "$TMPDIR/" && touch "$TMPDIR/.nojekyll"
-cd "$TMPDIR" && git init && git checkout -b gh-pages
-git add -A && git commit -m "Deploy"
-git remote add origin git@github.com:carolcesp/anvivino.git
-git push origin gh-pages --force
-cd /Users/carolcespedes/Documents/projects/anvivino && rm -rf "$TMPDIR"
 
+rm -rf "$TMPDIR" && mkdir "$TMPDIR"
+
+cp -r dist/anvivino/browser/. "$TMPDIR/"
+
+# GitHub Pages
+touch "$TMPDIR/.nojekyll"
+
+# Custom domain
+echo "www.anvivino.com" > "$TMPDIR/CNAME"
+
+# 3. Desplegar
+cd "$TMPDIR"
+
+git init
+git checkout -b gh-pages
+
+git add -A
+git commit -m "Deploy"
+
+git remote add origin git@github.com:nglorac/anvivino.git
+git push origin gh-pages --force
+
+# 4. Limpiar
+cd /Users/carolcespedes/Documents/projects/anvivino
+rm -rf "$TMPDIR"

@@ -37,23 +37,6 @@ import { PACK_STEPS_CONFIG } from './config/pack-customization.config';
               {{ currentStep().title }}
             </h2>
 
-            <!-- Step Images -->
-            @if (currentStep().images.length > 0) {
-              <div class="grid grid-cols-1 gap-4 mb-8" 
-                   [class.sm:grid-cols-2]="currentStep().images.length === 2"
-                   [class.sm:grid-cols-3]="currentStep().images.length >= 3">
-                @for (image of currentStep().images; track image.url) {
-                  <div class="relative w-full aspect-video sm:aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
-                    <img 
-                      [src]="image.url" 
-                      [alt]="image.alt"
-                      class="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                      loading="lazy">
-                  </div>
-                }
-              </div>
-            }
-
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               @for (option of currentStep().options; track option.id) {
                 <app-option-card 

@@ -1,4 +1,11 @@
-export interface StepImage {
+export type PackCategory =
+  | 'bolsa'
+  | 'vino'
+  | 'chocolates'
+  | 'copas'
+  | 'extras';
+
+export interface PackImage {
   url: string;
   alt: string;
 }
@@ -6,17 +13,16 @@ export interface StepImage {
 export interface PackOption {
   id: string;
   name: string;
-  category: 'bolsa' | 'vino' | 'chocolates' | 'copas' | 'extras';
+  category: PackCategory;
   description?: string;
-  priceDelta?: number;
+  image?: PackImage;
 }
 
 export interface CustomizationStep {
   id: number;
-  key: 'bolsa' | 'vino' | 'chocolates' | 'copas' | 'extras';
+  key: PackCategory;
   label: string;
   title: string;
-  images: StepImage[];
   options: PackOption[];
 }
 
