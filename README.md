@@ -57,38 +57,3 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-
-## Build desde cero
-
-# 1. Compilar
-npm run build -- --base-href /
-
-# 2. Preparar despliegue
-TMPDIR="/Users/carolcespedes/Documents/anvivino_deploy_tmp"
-
-rm -rf "$TMPDIR" && mkdir "$TMPDIR"
-
-cp -r dist/anvivino/browser/. "$TMPDIR/"
-
-# GitHub Pages
-touch "$TMPDIR/.nojekyll"
-
-# Custom domain
-echo "www.anvivino.com" > "$TMPDIR/CNAME"
-
-# 3. Desplegar
-cd "$TMPDIR"
-
-git init
-git checkout -b gh-pages
-
-git add -A
-git commit -m "Deploy"
-
-git remote add origin git@github.com:nglorac/anvivino.git
-git push origin gh-pages --force
-
-# 4. Limpiar
-cd /Users/carolcespedes/Documents/projects/anvivino
-rm -rf "$TMPDIR"
