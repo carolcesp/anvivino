@@ -28,7 +28,6 @@ yarn-error.log
 !.vscode/extensions.json
 !.vscode/mcp.json
 .history/*
-.ai
 
 # Miscellaneous
 /.angular/cache
@@ -46,3 +45,6 @@ Thumbs.db
 
 # Local deployment instructions
 .deploy_local.md
+
+# Local AI/development instructions
+.agent/
